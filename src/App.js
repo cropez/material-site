@@ -8,14 +8,13 @@ import { Route, Switch } from "react-router-dom";
 
 
 export default function App() {
-    return(<>
+  return (<>
     <Header /><Switch>
-            <Route exact from="/Home" render={props => <Home {...props}/>} />
-            <Route exact path="/contact" render={props => <Contact {...props}/>} />
-            <Route exact path="/about" render={props => <About {...props} />} />
-            
-        </Switch>
-        <Footer/></>
+      <Route exact from="" render={props => <Home {...props} />} />
+      <Route exact path="/contact" render={props => <Contact {...props} />} />
+      <Route exact path="/about" render={props => <About {...props} />} />
+    </Switch>
+    <Footer /></>
 
   );
 }

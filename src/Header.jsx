@@ -20,50 +20,50 @@ export default function Header() {
 
   return (
     <Box >
-      <AppBar sx={{backgroundColor:'#A0A0A0'}}>
+      <AppBar sx={{ backgroundColor: '#F0F0F0' }}>
         <Toolbar>
-      <IconButton 
-        aria-controls={open ?'' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-      >
-        <MenuIcon/>
-      </IconButton>
-      <Menu
-        menu={menu}
-        open={open}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
-      >
-        <MenuItem 
-         component={Link}
-         to='./Home'
-        onClick={handleClose}>
-          Home
-        </MenuItem>
-        <MenuItem 
-         component={Link}
-         to='./Contact'
-        onClick={handleClose}>
-          Contacts
-          </MenuItem>
-        <MenuItem 
-         component={Link}
-         to='./About'
-        onClick={handleClose}>
-          About
-        </MenuItem>
-      </Menu>
-      </Toolbar>
+          <IconButton
+            aria-controls={open ? '' : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? 'true' : undefined}
+            onClick={handleClick}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            menu={menu}
+            open={open}
+            onClose={handleClose}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+          >
+            <MenuItem
+              component={Link}
+              to='./Home'
+              onClick={handleClose}>
+              Home
+            </MenuItem>
+            <MenuItem
+              component={Link}
+              to='./Contact'
+              onClick={handleClose}>
+              Contacts
+            </MenuItem>
+            <MenuItem
+              component={Link}
+              to='./About'
+              onClick={handleClose}>
+              About
+            </MenuItem>
+          </Menu>
+        </Toolbar>
       </AppBar>
-      </Box>
+    </Box>
   );
 }

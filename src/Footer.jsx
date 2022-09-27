@@ -13,31 +13,23 @@ import {
 
 export default function Social() {
     return (
-        <><Container MaxWidth="lg">
-            <Grid container xs={12} display="flex">
-                <Grid item xs={12} textAlign={"center"} >
-                    <Link href="https://www.youtube.com"
-                        className="youtube social">
-                        <FontAwesomeIcon icon={faYoutube} size="2x" />
-                    </Link>
-                    <Grid item xs={12}  textAlign={"center"}>
-                        <Link href="https://www.facebook.com"
-                            className="facebook social">
-                            <FontAwesomeIcon icon={faFacebook} size="2x" />
-                        </Link>
-                    </Grid>
-                    <Grid item xs={12} textAlign={"center"}>
-                        <Link href="https://www.twitter.com" className="twitter social">
-                            <FontAwesomeIcon icon={faTwitter} size="2x" />
-                        </Link>
-                    </Grid>
-                    <Grid item xs={12} textAlign={"center"}>
-                        <Link href="https://www.instagram.com"
-                            className="instagram social">
-                            <FontAwesomeIcon icon={faInstagram} size="2x" />
-                        </Link>
-                    </Grid>
-                </Grid>
+        <><Container>
+            <Grid container xs={12} className="footer">
+                <Link href="https://www.youtube.com"
+                    className="youtube social">
+                    <FontAwesomeIcon icon={faYoutube} size="2x" />
+                </Link>
+                <Link href="https://www.facebook.com"
+                    className="facebook social">
+                    <FontAwesomeIcon icon={faFacebook} size="2x" />
+                </Link>
+                <Link href="https://www.twitter.com" className="twitter social">
+                    <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </Link>
+                <Link href="https://www.instagram.com"
+                    className="instagram social">
+                    <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </Link>
             </Grid>
         </Container>
         </>
